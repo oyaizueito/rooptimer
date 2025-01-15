@@ -7,20 +7,23 @@ import OperateButton from './OperateButton';
 function App() {
   const [nowTime, setNowTime] = useState<number>(30);
   const [firstTime, setFirstTime] = useState<number>(30);
-  const [secondTime, setSecondTime] = useState<number>(5);
+  // const [secondTime, setSecondTime] = useState<number>(5);
   const [isInputDisabled, setIsInputDisabled] = useState<boolean>(false);
 
   return (
     <div className='text-center'>
       <SelectButton
-        setNowTime={setNowTime} setFirstTime={setFirstTime} setSecondTime={setSecondTime}
+        setNowTime={setNowTime}
+        setFirstTime={setFirstTime}
         isInputDisabled={isInputDisabled}
       />
       <TimeView
-        nowTime={nowTime} firstTime={firstTime}
+        nowTime={nowTime}
+        firstTime={firstTime}
       />
       <OperateButton
-        setNowTime={setNowTime} firstTime={firstTime} secondTime={secondTime}
+        setNowTime={setNowTime}
+        firstTime={firstTime}
         setIsInputDisabled={setIsInputDisabled}
       />
     </div>

@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 
-const OperateButton = ({ setNowTime, firstTime, secondTime, setIsInputDisabled }: any) => {
+const OperateButton = ({ setNowTime, firstTime, setIsInputDisabled }: any) => {
   const [isResetDisabled, setIsResetDisabled] = useState<boolean>(true);
 
   let timer = useRef<number | undefined>(undefined);

@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-const SelectButton = ({ setNowTime, setFirstTime, setSecondTime, isInputDisabled }: any) => {
+const SelectButton = ({ setNowTime, setFirstTime, isInputDisabled }: any) => {
   let $timeInput = useRef<any>(null);
 
   const changeFirstTime = (firstTimeChange: number) => {
